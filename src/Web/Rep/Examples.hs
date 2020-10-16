@@ -10,7 +10,6 @@
 module Web.Rep.Examples
   ( page1,
     page2,
-    pagemj,
     cfg2,
     RepExamples (..),
     repExamples,
@@ -52,17 +51,6 @@ page2 =
   #libsCss .~ (libCss <$> cssLibsLocal)
     $ #libsJs .~ (libJs <$> jsLibsLocal)
     $ page1
-
--- | simple mathjax formulae
-pagemj :: Page
-pagemj = mathjaxPage & #htmlBody .~ htmlMathjaxExample
-
-htmlMathjaxExample :: HtmlT Identity ()
-htmlMathjaxExample =
-  p_ "double dollar:"
-    <> p_ "$$\\sum_{i=0}^n i^2 = \\frac{(n^2+n)(2n+1)}{6}$$"
-    <> p_ "single dollar for inline: $\\sum_{i=0}^n i^2 = \\frac{(n^2+n)(2n+1)}{6}$"
-    <> p_ "escaped brackets for inline mathjax: \\(\\sum_{i=0}^n i^2 = \\frac{(n^2+n)(2n+1)}{6}\\)"
 
 cfg2 :: PageConfig
 cfg2 =

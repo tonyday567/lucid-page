@@ -1,6 +1,6 @@
 cabal-version:  2.4
 name:           web-rep
-version:        0.7.0
+version:        0.8.0
 synopsis:       representations of a web page
 category: web
 description:    An applicative-based, shared-data representation of a web page. 
@@ -20,7 +20,6 @@ library
     Web.Rep.Examples
     Web.Rep.Html
     Web.Rep.Html.Input
-    Web.Rep.Mathjax
     Web.Rep.Page
     Web.Rep.Render
     Web.Rep.Server

@@ -6,7 +6,7 @@ Various functions and representations for a web page.
 The best way to understand functionality is via running the example app:
 
 ```
-stack build --test --exec "$(stack path --local-install-root)/bin/page-example --apptype SharedTest" --file-watch
+stack build --test --exec "$(stack path --local-install-root)/bin/rep-example --apptype SharedTest" --file-watch
 ```
 
 http://localhost:9160/
