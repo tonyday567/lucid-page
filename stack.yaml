@@ -2,11 +2,14 @@ resolver: nightly-2020-06-25
 
 packages:
   - '.'
+  - ../numhask
+  - ../box
+  - ../box-socket
 
-extra-deps:
-  - numhask-0.6.0.2
-  - box-0.6.0
-  - box-socket-0.0.2
+extra-deps: []
+  #- numhask-0.6.0.2
+  #- box-0.6.0
+  #- box-socket-0.0.2
 
 allow-newer: true
 
